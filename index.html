@@ -1,454 +1,512 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EBC BTP — Bâtiments, Travaux Publics, Assainissement &amp; Espaces Verts</title>
-<meta name="description" content="EBC BTP : bâtiments, travaux publics, assainissement, espaces verts et vente de matériaux de construction et outillages.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EBC BTP — Bâtiments, Travaux Publics, Assainissement &amp; Espaces Verts</title>
+  <meta name="description"
+    content="EBC BTP : bâtiments, travaux publics, assainissement, espaces verts et vente de matériaux de construction et outillages.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-  <div class="wrap nav">
-    <a href="#top" class="logo">
-      <span class="mark">EBC</span>
-      <span class="sub">BTP</span>
-    </a>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#activites">Activités</a></li>
-        <li><a href="#materiaux">Matériaux</a></li>
-        <li><a href="#realisations">Réalisations</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="nav-cta">
-      <a href="#contact" class="btn btn-outline-light">Demander un devis</a>
-      <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false"><span></span></button>
-    </div>
-  </div>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#activites">Activités</a>
-    <a href="#materiaux">Matériaux</a>
-    <a href="#realisations">Réalisations</a>
-    <a href="#contact">Contact</a>
-    <a href="#contact" class="btn btn-primary">Demander un devis</a>
-  </div>
-</header>
-
-<main id="top">
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <p class="eyebrow hero-eyebrow">Entreprise de BTP — Lomé &amp; région</p>
-        <h1>
-          <span class="w1">Construire.</span>
-          <span class="w2">Raccorder.</span>
-          <span class="w3">Verdir.</span>
-        </h1>
-        <p class="lead">De la fondation aux espaces verts, une seule entreprise pilote vos chantiers de bâtiment, de voirie et d'assainissement — et vous fournit les matériaux et l'outillage pour avancer plus vite.</p>
-        <div class="hero-ctas">
-          <a href="#contact" class="btn btn-primary">Demander un devis</a>
-          <a href="#activites" class="btn btn-outline-light">Voir nos activités</a>
-        </div>
-      </div>
-      <div class="hero-art" aria-hidden="true">
-        <svg viewBox="0 0 640 560" xmlns="http://www.w3.org/2000/svg">
-          <!-- ruler -->
-          <line x1="26" y1="80" x2="26" y2="520" stroke="#5A6067" stroke-width="1"/>
-          <g class="mono" fill="#8B9096" font-size="11">
-            <line x1="18" y1="120" x2="26" y2="120" stroke="#5A6067"/>
-            <text x="0" y="124" text-anchor="start">+2.5</text>
-            <line x1="18" y1="260" x2="26" y2="260" stroke="#F2B300" stroke-width="1.4"/>
-            <text x="0" y="264" fill="#F2B300">0.0</text>
-            <line x1="18" y1="340" x2="26" y2="340" stroke="#5A6067"/>
-            <text x="0" y="344">-1.5</text>
-            <line x1="18" y1="420" x2="26" y2="420" stroke="#5A6067"/>
-            <text x="0" y="424">-3.0</text>
-            <line x1="18" y1="500" x2="26" y2="500" stroke="#5A6067"/>
-            <text x="0" y="504">-4.5</text>
-          </g>
-
-          <!-- soil -->
-          <rect x="40" y="260" width="420" height="260" fill="#3A3128" opacity="0.55"/>
-          <g opacity="0.5">
-            <circle cx="220" cy="290" r="3" fill="#C7BEAE"/>
-            <circle cx="245" cy="305" r="2.5" fill="#C7BEAE"/>
-            <circle cx="270" cy="285" r="3" fill="#C7BEAE"/>
-            <circle cx="295" cy="300" r="2" fill="#C7BEAE"/>
-            <circle cx="180" cy="300" r="2.5" fill="#C7BEAE"/>
-            <circle cx="380" cy="290" r="3" fill="#C7BEAE"/>
-            <circle cx="410" cy="300" r="2" fill="#C7BEAE"/>
-            <circle cx="150" cy="285" r="2" fill="#C7BEAE"/>
-          </g>
-
-          <!-- ground line -->
-          <line x1="40" y1="260" x2="460" y2="260" stroke="#C7CBCF" stroke-width="1.5"/>
-
-          <!-- road -->
-          <rect x="190" y="245" width="270" height="15" fill="#6D7982"/>
-          <rect x="205" y="251" width="10" height="3" fill="#F2B300"/>
-          <rect x="230" y="251" width="10" height="3" fill="#F2B300"/>
-          <rect x="255" y="251" width="10" height="3" fill="#F2B300"/>
-          <rect x="280" y="251" width="10" height="3" fill="#F2B300"/>
-
-          <!-- manhole shaft -->
-          <rect x="316" y="245" width="16" height="115" fill="#454C53"/>
-          <circle cx="324" cy="245" r="10" fill="#454C53" stroke="#8B9096" stroke-width="1.5"/>
-
-          <!-- pipe -->
-          <rect x="210" y="360" width="240" height="30" rx="15" fill="#1E5A76" stroke="#2C7DA0" stroke-width="1.5"/>
-          <line class="flow-line" x1="222" y1="375" x2="438" y2="375" stroke="#8FD1EE" stroke-width="2"/>
-
-          <!-- grass tufts -->
-          <g stroke="#3E7A52" stroke-width="2.5" stroke-linecap="round" fill="none">
-            <path d="M400 245 L397 233"/>
-            <path d="M406 245 L406 231"/>
-            <path d="M412 245 L416 233"/>
-            <path d="M424 245 L421 233"/>
-            <path d="M430 245 L430 231"/>
-            <path d="M436 245 L440 233"/>
-          </g>
-
-          <!-- building -->
-          <rect x="70" y="120" width="110" height="140" fill="#2B3036" stroke="#F2B300" stroke-width="2"/>
-          <polygon points="60,120 125,68 190,120" fill="#F2B300"/>
-          <g fill="#E8E3DA" opacity="0.85">
-            <rect x="84" y="140" width="16" height="20"/>
-            <rect x="115" y="140" width="16" height="20"/>
-            <rect x="146" y="140" width="16" height="20"/>
-            <rect x="84" y="175" width="16" height="20"/>
-            <rect x="115" y="175" width="16" height="20"/>
-            <rect x="146" y="175" width="16" height="20"/>
-          </g>
-          <rect x="112" y="215" width="26" height="45" fill="#454C53"/>
-          <!-- footing -->
-          <rect x="75" y="260" width="100" height="34" fill="#454C53"/>
-
-          <!-- callouts -->
-          <g class="mono" font-size="12" font-weight="700">
-            <line x1="125" y1="80" x2="500" y2="92" stroke="#5A6067" stroke-width="1"/>
-            <circle cx="500" cy="92" r="4" fill="#F2B300"/>
-            <text x="512" y="96" fill="#F2B300">BÂTIMENTS</text>
-
-            <line x1="420" y1="236" x2="500" y2="185" stroke="#5A6067" stroke-width="1"/>
-            <circle cx="500" cy="185" r="4" fill="#3E7A52"/>
-            <text x="512" y="189" fill="#7CC495">ESPACES VERTS</text>
-
-            <line x1="300" y1="250" x2="500" y2="275" stroke="#5A6067" stroke-width="1"/>
-            <circle cx="500" cy="275" r="4" fill="#6D7982"/>
-            <text x="512" y="279" fill="#AAB2B9">TRAVAUX PUBLICS</text>
-
-            <line x1="330" y1="376" x2="500" y2="400" stroke="#5A6067" stroke-width="1"/>
-            <circle cx="500" cy="400" r="4" fill="#2C7DA0"/>
-            <text x="512" y="404" fill="#6FB6D6">ASSAINISSEMENT</text>
-          </g>
-        </svg>
-      </div>
-    </div>
-  </section>
-
-  <!-- ACTIVITES -->
-  <section id="activites">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Nos domaines d'intervention</p>
-        <h2>Quatre métiers, un seul chantier</h2>
-        <p>Nous coordonnons l'ensemble des corps de métier nécessaires à votre projet, du gros œuvre jusqu'à l'aménagement paysager, avec une équipe technique unique et responsable.</p>
-      </div>
-
-      <div class="activities-grid">
-        <article class="activity-card reveal" style="--card-color:#F2B300">
-          <svg class="activity-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="10" y="18" width="28" height="24" />
-            <polygon points="6,18 24,6 42,18" />
-            <rect x="16" y="26" width="6" height="7" />
-            <rect x="26" y="26" width="6" height="7" />
-            <rect x="21" y="35" width="6" height="7" />
-          </svg>
-          <h3>Bâtiments</h3>
-          <p>Construction, extension et réhabilitation de bâtiments résidentiels, commerciaux et industriels, du gros œuvre à la finition.</p>
-          <span class="activity-tag">Gros œuvre — Finition</span>
-        </article>
-
-        <article class="activity-card reveal" style="--card-color:#6D7982">
-          <svg class="activity-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 40 L18 8 L22 8 L36 40" />
-            <line x1="21" y1="24" x2="19" y2="30" />
-            <path d="M2 42 h44" />
-          </svg>
-          <h3>Travaux publics</h3>
-          <p>Voirie, terrassement, ouvrages d'art et aménagements urbains, réalisés selon les cahiers des charges publics et privés.</p>
-          <span class="activity-tag">Voirie — Terrassement</span>
-        </article>
-
-        <article class="activity-card reveal" style="--card-color:#2C7DA0">
-          <svg class="activity-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="6" y="20" width="36" height="12" rx="6" />
-            <line x1="12" y1="26" x2="36" y2="26" stroke-dasharray="3 4"/>
-            <line x1="24" y1="20" x2="24" y2="8" />
-            <circle cx="24" cy="6" r="3" fill="currentColor" stroke="none" />
-          </svg>
-          <h3>Assainissement</h3>
-          <p>Réseaux d'eaux usées et pluviales, fosses, drainage et raccordements, pour des sites sains et conformes.</p>
-          <span class="activity-tag">Réseaux — Drainage</span>
-        </article>
-
-        <article class="activity-card reveal" style="--card-color:#3E7A52">
-          <svg class="activity-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M24 42 V22" />
-            <path d="M24 22 C24 12 14 12 10 18 C16 22 20 20 24 22 Z" fill="currentColor" stroke="none" opacity="0.9"/>
-            <path d="M24 26 C24 16 34 16 38 22 C32 26 28 24 24 26 Z" fill="currentColor" stroke="none" opacity="0.7"/>
-          </svg>
-          <h3>Espaces verts</h3>
-          <p>Conception et entretien d'espaces verts : plantations, engazonnement, arrosage et aménagements paysagers.</p>
-          <span class="activity-tag">Plantation — Entretien</span>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- MATERIAUX -->
-  <section id="materiaux" class="materials">
-    <div class="wrap">
-      <div class="materials-top">
-        <div class="section-head" style="margin-bottom:0;">
-          <p class="eyebrow">Vente de matériaux &amp; outillage</p>
-          <h2>Tout ce qu'il faut pour tenir les délais</h2>
-          <p>Ciment, fer à béton, granulats, blocs et outillage professionnel, disponibles à l'achat pour vos propres chantiers, avec les conseils de nos équipes techniques.</p>
-        </div>
-        <a href="#contact" class="btn btn-outline-dark">Demander une liste de prix</a>
-      </div>
-
-      <div class="materials-strip">
-        <div class="material-card reveal">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20 V10 a8 8 0 0 1 16 0 v10"/><line x1="4" y1="20" x2="20" y2="20"/></svg>
-          <h4>Ciment &amp; liants</h4>
-          <p>Sacs de ciment et liants hydrauliques pour tous types de travaux.</p>
-        </div>
-        <div class="material-card reveal">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12 L7 4 L11 12 L15 4 L19 12 L21 8"/></svg>
-          <h4>Fer &amp; acier</h4>
-          <p>Fer à béton, treillis soudés et profilés métalliques.</p>
-        </div>
-        <div class="material-card reveal">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="16" r="2"/><circle cx="12" cy="10" r="2"/><circle cx="18" cy="16" r="2"/><circle cx="10" cy="18" r="1.5"/><circle cx="16" cy="8" r="1.5"/></svg>
-          <h4>Granulats &amp; sable</h4>
-          <p>Gravier, sable et agrégats livrés selon vos volumes de chantier.</p>
-        </div>
-        <div class="material-card reveal">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 6 l4 4 -8 8 -4-4 8-8Z"/><path d="M4 20 l3-3"/></svg>
-          <h4>Outillage</h4>
-          <p>Outillage manuel et équipement de chantier, à l'achat ou en conseil technique.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- STATS -->
-  <section class="stats">
-    <div class="wrap stats-grid">
-      <div class="stat">
-        <span class="num mono">15+</span>
-        <span class="label">Années d'expérience</span>
-      </div>
-      <div class="stat">
-        <span class="num mono">240+</span>
-        <span class="label">Chantiers livrés</span>
-      </div>
-      <div class="stat">
-        <span class="num mono">04</span>
-        <span class="label">Corps de métier intégrés</span>
-      </div>
-      <div class="stat">
-        <span class="num mono">100%</span>
-        <span class="label">Lomé &amp; régions</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROCESS -->
-  <section>
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Notre méthode</p>
-        <h2>Comment se déroule votre projet</h2>
-      </div>
-      <div class="process-grid">
-        <div class="process-step reveal">
-          <div class="process-num mono">01 / DEVIS</div>
-          <h3>Visite &amp; devis</h3>
-          <p>Visite de site, prise de mesures et devis détaillé transmis sous 48h.</p>
-        </div>
-        <div class="process-step reveal">
-          <div class="process-num mono">02 / PLANIFICATION</div>
-          <h3>Planification</h3>
-          <p>Choix des matériaux, du planning et de l'équipe dédiée à votre chantier.</p>
-        </div>
-        <div class="process-step reveal">
-          <div class="process-num mono">03 / EXÉCUTION</div>
-          <h3>Exécution</h3>
-          <p>Suivi quotidien du chantier, respect des normes et des délais annoncés.</p>
-        </div>
-        <div class="process-step reveal">
-          <div class="process-num mono">04 / RÉCEPTION</div>
-          <h3>Réception</h3>
-          <p>Livraison du chantier, garanties applicables et service après-chantier.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- REALISATIONS -->
-  <section id="realisations" class="portfolio">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Réalisations</p>
-        <h2>Des chantiers de toutes tailles</h2>
-        <p>Un aperçu illustratif de nos types d'interventions — à remplacer par vos photos et références réelles.</p>
-      </div>
-      <div class="portfolio-grid">
-        <div class="portfolio-card reveal" style="--tile-bg:#C89000">
-          <svg viewBox="0 0 48 48" fill="currentColor"><rect x="10" y="18" width="28" height="24"/><polygon points="6,18 24,6 42,18"/></svg>
-          <div class="portfolio-caption"><span class="cat mono">Bâtiment résidentiel</span><span class="loc">Lomé, Togo</span></div>
-        </div>
-        <div class="portfolio-card reveal" style="--tile-bg:#3D454C">
-          <svg viewBox="0 0 48 48" fill="currentColor"><path d="M4 40 L18 8 L22 8 L36 40Z"/></svg>
-          <div class="portfolio-caption"><span class="cat mono">Voirie communale</span><span class="loc">Région Maritime</span></div>
-        </div>
-        <div class="portfolio-card reveal" style="--tile-bg:#1E5A76">
-          <svg viewBox="0 0 48 48" fill="currentColor"><rect x="6" y="20" width="36" height="12" rx="6"/></svg>
-          <div class="portfolio-caption"><span class="cat mono">Réseau d'assainissement</span><span class="loc">Zone industrielle</span></div>
-        </div>
-        <div class="portfolio-card reveal" style="--tile-bg:#2C5A3C">
-          <svg viewBox="0 0 48 48" fill="currentColor"><path d="M24 42 V22 C24 12 14 12 10 18 C16 22 20 20 24 22Z"/></svg>
-          <div class="portfolio-caption"><span class="cat mono">Espace vert</span><span class="loc">Résidence privée</span></div>
-        </div>
-        <div class="portfolio-card reveal" style="--tile-bg:#7C300F">
-          <svg viewBox="0 0 48 48" fill="currentColor"><path d="M14 6 l4 4 -8 8 -4-4 8-8Z"/></svg>
-          <div class="portfolio-caption"><span class="cat mono">Fourniture matériaux</span><span class="loc">Chantier privé</span></div>
-        </div>
-        <div class="portfolio-card reveal" style="--tile-bg:#3D454C">
-          <svg viewBox="0 0 48 48" fill="currentColor"><rect x="10" y="12" width="28" height="30"/></svg>
-          <div class="portfolio-caption"><span class="cat mono">Bâtiment commercial</span><span class="loc">Lomé, Togo</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="contact">
-    <div class="wrap contact-grid">
-      <div>
-        <div class="section-head">
-          <p class="eyebrow">Contact</p>
-          <h2>Discutons de votre chantier</h2>
-          <p>Décrivez votre projet, nous revenons vers vous sous 48 heures ouvrées avec un premier avis technique.</p>
-        </div>
-
-        <form id="contactForm">
-          <div class="field-row">
-            <div class="field">
-              <label for="nom">Nom complet</label>
-              <input type="text" id="nom" name="nom" required>
-            </div>
-            <div class="field">
-              <label for="tel">Téléphone</label>
-              <input type="tel" id="tel" name="tel" required>
-            </div>
-          </div>
-          <div class="field">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="field">
-            <label for="type">Type de projet</label>
-            <select id="type" name="type">
-              <option>Bâtiment</option>
-              <option>Travaux publics</option>
-              <option>Assainissement</option>
-              <option>Espaces verts</option>
-              <option>Matériaux &amp; outillage</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Envoyer la demande</button>
-          <p class="form-note">Ce formulaire est une démonstration : branchez-le à votre messagerie ou votre CRM pour recevoir les demandes.</p>
-          <div class="confirm-msg" id="confirmMsg">Merci, votre demande a bien été enregistrée. Notre équipe vous recontacte sous 48h.</div>
-        </form>
-      </div>
-
-      <div>
-        <div class="info-block">
-          <h4>Adresse</h4>
-          <p>Zone industrielle, Route d'Agoè<br>Lomé, Togo</p>
-        </div>
-        <div class="info-block">
-          <h4>Téléphone</h4>
-          <p>+228 00 00 00 00</p>
-        </div>
-        <div class="info-block">
-          <h4>Email</h4>
-          <p>contact@ebc-btp.com</p>
-        </div>
-        <div class="info-block">
-          <h4>Horaires</h4>
-          <p>Lundi – Vendredi : 7h30 – 17h30<br>Samedi : 8h00 – 12h00</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer>
-  <div class="wrap">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-logo">EBC BTP</div>
-        <p class="footer-tagline">Bâtiments, travaux publics, assainissement et espaces verts. Vente de matériaux de construction et outillages.</p>
-      </div>
-      <div class="footer-col">
-        <h5>Activités</h5>
-        <ul>
-          <li><a href="#activites">Bâtiments</a></li>
-          <li><a href="#activites">Travaux publics</a></li>
-          <li><a href="#activites">Assainissement</a></li>
-          <li><a href="#activites">Espaces verts</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>Entreprise</h5>
-        <ul>
-          <li><a href="#materiaux">Matériaux &amp; outillage</a></li>
+  <header>
+    <div class="wrap nav">
+      <a href="#top" class="logo">
+        <span class="mark">EBC</span>
+        <span class="sub">BTP</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#activites">Activités</a></li>
+          <li><a href="#materiaux">Matériaux</a></li>
           <li><a href="#realisations">Réalisations</a></li>
-          <li><a href="#contact">Devis</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </div>
-      <div class="footer-col">
-        <h5>Contact</h5>
-        <ul>
-          <li>+228 00 00 00 00</li>
-          <li>contact@ebc-btp.com</li>
-          <li>Lomé, Togo</li>
-        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a href="#contact" class="btn btn-outline-light">Demander un devis</a>
+        <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false"><span></span></button>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>© <span id="year"></span> EBC BTP. Tous droits réservés.</span>
-      <span>Site vitrine — exemple généré</span>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#activites">Activités</a>
+      <a href="#materiaux">Matériaux</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn btn-primary">Demander un devis</a>
     </div>
-  </div>
-</footer>
-<script src="script.js"></script>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow hero-eyebrow">Entreprise de BTP — Lomé &amp; région</p>
+          <h1>
+            <span class="w1">Construire.</span>
+            <span class="w2">Raccorder.</span>
+            <span class="w3">Verdir.</span>
+          </h1>
+          <p class="lead">De la fondation aux espaces verts, une seule entreprise pilote vos chantiers de bâtiment, de
+            voirie et d'assainissement — et vous fournit les matériaux et l'outillage pour avancer plus vite.</p>
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-primary">Demander un devis</a>
+            <a href="#activites" class="btn btn-outline-light">Voir nos activités</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 640 560" xmlns="http://www.w3.org/2000/svg">
+            <!-- ruler -->
+            <line x1="26" y1="80" x2="26" y2="520" stroke="#5A6067" stroke-width="1" />
+            <g class="mono" fill="#8B9096" font-size="11">
+              <line x1="18" y1="120" x2="26" y2="120" stroke="#5A6067" />
+              <text x="0" y="124" text-anchor="start">+2.5</text>
+              <line x1="18" y1="260" x2="26" y2="260" stroke="#F2B300" stroke-width="1.4" />
+              <text x="0" y="264" fill="#F2B300">0.0</text>
+              <line x1="18" y1="340" x2="26" y2="340" stroke="#5A6067" />
+              <text x="0" y="344">-1.5</text>
+              <line x1="18" y1="420" x2="26" y2="420" stroke="#5A6067" />
+              <text x="0" y="424">-3.0</text>
+              <line x1="18" y1="500" x2="26" y2="500" stroke="#5A6067" />
+              <text x="0" y="504">-4.5</text>
+            </g>
+
+            <!-- soil -->
+            <rect x="40" y="260" width="420" height="260" fill="#3A3128" opacity="0.55" />
+            <g opacity="0.5">
+              <circle cx="220" cy="290" r="3" fill="#C7BEAE" />
+              <circle cx="245" cy="305" r="2.5" fill="#C7BEAE" />
+              <circle cx="270" cy="285" r="3" fill="#C7BEAE" />
+              <circle cx="295" cy="300" r="2" fill="#C7BEAE" />
+              <circle cx="180" cy="300" r="2.5" fill="#C7BEAE" />
+              <circle cx="380" cy="290" r="3" fill="#C7BEAE" />
+              <circle cx="410" cy="300" r="2" fill="#C7BEAE" />
+              <circle cx="150" cy="285" r="2" fill="#C7BEAE" />
+            </g>
+
+            <!-- ground line -->
+            <line x1="40" y1="260" x2="460" y2="260" stroke="#C7CBCF" stroke-width="1.5" />
+
+            <!-- road -->
+            <rect x="190" y="245" width="270" height="15" fill="#6D7982" />
+            <rect x="205" y="251" width="10" height="3" fill="#F2B300" />
+            <rect x="230" y="251" width="10" height="3" fill="#F2B300" />
+            <rect x="255" y="251" width="10" height="3" fill="#F2B300" />
+            <rect x="280" y="251" width="10" height="3" fill="#F2B300" />
+
+            <!-- manhole shaft -->
+            <rect x="316" y="245" width="16" height="115" fill="#454C53" />
+            <circle cx="324" cy="245" r="10" fill="#454C53" stroke="#8B9096" stroke-width="1.5" />
+
+            <!-- pipe -->
+            <rect x="210" y="360" width="240" height="30" rx="15" fill="#1E5A76" stroke="#2C7DA0" stroke-width="1.5" />
+            <line class="flow-line" x1="222" y1="375" x2="438" y2="375" stroke="#8FD1EE" stroke-width="2" />
+
+            <!-- grass tufts -->
+            <g stroke="#3E7A52" stroke-width="2.5" stroke-linecap="round" fill="none">
+              <path d="M400 245 L397 233" />
+              <path d="M406 245 L406 231" />
+              <path d="M412 245 L416 233" />
+              <path d="M424 245 L421 233" />
+              <path d="M430 245 L430 231" />
+              <path d="M436 245 L440 233" />
+            </g>
+
+            <!-- building -->
+            <rect x="70" y="120" width="110" height="140" fill="#2B3036" stroke="#F2B300" stroke-width="2" />
+            <polygon points="60,120 125,68 190,120" fill="#F2B300" />
+            <g fill="#E8E3DA" opacity="0.85">
+              <rect x="84" y="140" width="16" height="20" />
+              <rect x="115" y="140" width="16" height="20" />
+              <rect x="146" y="140" width="16" height="20" />
+              <rect x="84" y="175" width="16" height="20" />
+              <rect x="115" y="175" width="16" height="20" />
+              <rect x="146" y="175" width="16" height="20" />
+            </g>
+            <rect x="112" y="215" width="26" height="45" fill="#454C53" />
+            <!-- footing -->
+            <rect x="75" y="260" width="100" height="34" fill="#454C53" />
+
+            <!-- callouts -->
+            <g class="mono" font-size="12" font-weight="700">
+              <line x1="125" y1="80" x2="500" y2="92" stroke="#5A6067" stroke-width="1" />
+              <circle cx="500" cy="92" r="4" fill="#F2B300" />
+              <text x="512" y="96" fill="#F2B300">BÂTIMENTS</text>
+
+              <line x1="420" y1="236" x2="500" y2="185" stroke="#5A6067" stroke-width="1" />
+              <circle cx="500" cy="185" r="4" fill="#3E7A52" />
+              <text x="512" y="189" fill="#7CC495">ESPACES VERTS</text>
+
+              <line x1="300" y1="250" x2="500" y2="275" stroke="#5A6067" stroke-width="1" />
+              <circle cx="500" cy="275" r="4" fill="#6D7982" />
+              <text x="512" y="279" fill="#AAB2B9">TRAVAUX PUBLICS</text>
+
+              <line x1="330" y1="376" x2="500" y2="400" stroke="#5A6067" stroke-width="1" />
+              <circle cx="500" cy="400" r="4" fill="#2C7DA0" />
+              <text x="512" y="404" fill="#6FB6D6">ASSAINISSEMENT</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACTIVITES -->
+    <section id="activites">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Nos domaines d'intervention</p>
+          <h2>Quatre métiers, un seul chantier</h2>
+          <p>Nous coordonnons l'ensemble des corps de métier nécessaires à votre projet, du gros œuvre jusqu'à
+            l'aménagement paysager, avec une équipe technique unique et responsable.</p>
+        </div>
+
+        <div class="activities-grid">
+          <article class="activity-card reveal" style="--card-color:#F2B300">
+            <svg class="activity-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="10" y="18" width="28" height="24" />
+              <polygon points="6,18 24,6 42,18" />
+              <rect x="16" y="26" width="6" height="7" />
+              <rect x="26" y="26" width="6" height="7" />
+              <rect x="21" y="35" width="6" height="7" />
+            </svg>
+            <h3>Bâtiments</h3>
+            <p>Construction, extension et réhabilitation de bâtiments résidentiels, commerciaux et industriels, du gros
+              œuvre à la finition.</p>
+            <span class="activity-tag">Gros œuvre — Finition</span>
+          </article>
+
+          <article class="activity-card reveal" style="--card-color:#6D7982">
+            <svg class="activity-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 40 L18 8 L22 8 L36 40" />
+              <line x1="21" y1="24" x2="19" y2="30" />
+              <path d="M2 42 h44" />
+            </svg>
+            <h3>Travaux publics</h3>
+            <p>Voirie, terrassement, ouvrages d'art et aménagements urbains, réalisés selon les cahiers des charges
+              publics et privés.</p>
+            <span class="activity-tag">Voirie — Terrassement</span>
+          </article>
+
+          <article class="activity-card reveal" style="--card-color:#2C7DA0">
+            <svg class="activity-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="6" y="20" width="36" height="12" rx="6" />
+              <line x1="12" y1="26" x2="36" y2="26" stroke-dasharray="3 4" />
+              <line x1="24" y1="20" x2="24" y2="8" />
+              <circle cx="24" cy="6" r="3" fill="currentColor" stroke="none" />
+            </svg>
+            <h3>Assainissement</h3>
+            <p>Réseaux d'eaux usées et pluviales, fosses, drainage et raccordements, pour des sites sains et conformes.
+            </p>
+            <span class="activity-tag">Réseaux — Drainage</span>
+          </article>
+
+          <article class="activity-card reveal" style="--card-color:#3E7A52">
+            <svg class="activity-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M24 42 V22" />
+              <path d="M24 22 C24 12 14 12 10 18 C16 22 20 20 24 22 Z" fill="currentColor" stroke="none"
+                opacity="0.9" />
+              <path d="M24 26 C24 16 34 16 38 22 C32 26 28 24 24 26 Z" fill="currentColor" stroke="none"
+                opacity="0.7" />
+            </svg>
+            <h3>Espaces verts</h3>
+            <p>Conception et entretien d'espaces verts : plantations, engazonnement, arrosage et aménagements paysagers.
+            </p>
+            <span class="activity-tag">Plantation — Entretien</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MATERIAUX -->
+    <section id="materiaux" class="materials">
+      <div class="wrap">
+        <div class="materials-top">
+          <div class="section-head" style="margin-bottom:0;">
+            <p class="eyebrow">Vente de matériaux &amp; outillage</p>
+            <h2>Tout ce qu'il faut pour tenir les délais</h2>
+            <p>Ciment, fer à béton, granulats, blocs et outillage professionnel, disponibles à l'achat pour vos propres
+              chantiers, avec les conseils de nos équipes techniques.</p>
+          </div>
+          <a href="#contact" class="btn btn-outline-dark">Demander une liste de prix</a>
+        </div>
+
+        <div class="materials-strip">
+          <div class="material-card reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 20 V10 a8 8 0 0 1 16 0 v10" />
+              <line x1="4" y1="20" x2="20" y2="20" />
+            </svg>
+            <h4>Ciment &amp; liants</h4>
+            <p>Sacs de ciment et liants hydrauliques pour tous types de travaux.</p>
+          </div>
+          <div class="material-card reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 12 L7 4 L11 12 L15 4 L19 12 L21 8" />
+            </svg>
+            <h4>Fer &amp; acier</h4>
+            <p>Fer à béton, treillis soudés et profilés métalliques.</p>
+          </div>
+          <div class="material-card reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="6" cy="16" r="2" />
+              <circle cx="12" cy="10" r="2" />
+              <circle cx="18" cy="16" r="2" />
+              <circle cx="10" cy="18" r="1.5" />
+              <circle cx="16" cy="8" r="1.5" />
+            </svg>
+            <h4>Granulats &amp; sable</h4>
+            <p>Gravier, sable et agrégats livrés selon vos volumes de chantier.</p>
+          </div>
+          <div class="material-card reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 6 l4 4 -8 8 -4-4 8-8Z" />
+              <path d="M4 20 l3-3" />
+            </svg>
+            <h4>Outillage</h4>
+            <p>Outillage manuel et équipement de chantier, à l'achat ou en conseil technique.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="wrap stats-grid">
+        <div class="stat">
+          <span class="num mono">15+</span>
+          <span class="label">Années d'expérience</span>
+        </div>
+        <div class="stat">
+          <span class="num mono">240+</span>
+          <span class="label">Chantiers livrés</span>
+        </div>
+        <div class="stat">
+          <span class="num mono">04</span>
+          <span class="label">Corps de métier intégrés</span>
+        </div>
+        <div class="stat">
+          <span class="num mono">100%</span>
+          <span class="label">Lomé &amp; régions</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Notre méthode</p>
+          <h2>Comment se déroule votre projet</h2>
+        </div>
+        <div class="process-grid">
+          <div class="process-step reveal">
+            <div class="process-num mono">01 / DEVIS</div>
+            <h3>Visite &amp; devis</h3>
+            <p>Visite de site, prise de mesures et devis détaillé transmis sous 48h.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="process-num mono">02 / PLANIFICATION</div>
+            <h3>Planification</h3>
+            <p>Choix des matériaux, du planning et de l'équipe dédiée à votre chantier.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="process-num mono">03 / EXÉCUTION</div>
+            <h3>Exécution</h3>
+            <p>Suivi quotidien du chantier, respect des normes et des délais annoncés.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="process-num mono">04 / RÉCEPTION</div>
+            <h3>Réception</h3>
+            <p>Livraison du chantier, garanties applicables et service après-chantier.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REALISATIONS -->
+    <section id="realisations" class="portfolio">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Réalisations</p>
+          <h2>Des chantiers de toutes tailles</h2>
+          <p>Un aperçu illustratif de nos types d'interventions — à remplacer par vos photos et références réelles.</p>
+        </div>
+        <div class="portfolio-grid">
+          <div class="portfolio-card reveal" style="--tile-bg:#C89000">
+            <svg viewBox="0 0 48 48" fill="currentColor">
+              <rect x="10" y="18" width="28" height="24" />
+              <polygon points="6,18 24,6 42,18" />
+            </svg>
+            <div class="portfolio-caption"><span class="cat mono">Bâtiment résidentiel</span><span class="loc">Lomé,
+                Togo</span></div>
+          </div>
+          <div class="portfolio-card reveal" style="--tile-bg:#3D454C">
+            <svg viewBox="0 0 48 48" fill="currentColor">
+              <path d="M4 40 L18 8 L22 8 L36 40Z" />
+            </svg>
+            <div class="portfolio-caption"><span class="cat mono">Voirie communale</span><span class="loc">Région
+                Maritime</span></div>
+          </div>
+          <div class="portfolio-card reveal" style="--tile-bg:#1E5A76">
+            <svg viewBox="0 0 48 48" fill="currentColor">
+              <rect x="6" y="20" width="36" height="12" rx="6" />
+            </svg>
+            <div class="portfolio-caption"><span class="cat mono">Réseau d'assainissement</span><span class="loc">Zone
+                industrielle</span></div>
+          </div>
+          <div class="portfolio-card reveal" style="--tile-bg:#2C5A3C">
+            <svg viewBox="0 0 48 48" fill="currentColor">
+              <path d="M24 42 V22 C24 12 14 12 10 18 C16 22 20 20 24 22Z" />
+            </svg>
+            <div class="portfolio-caption"><span class="cat mono">Espace vert</span><span class="loc">Résidence
+                privée</span></div>
+          </div>
+          <div class="portfolio-card reveal" style="--tile-bg:#7C300F">
+            <svg viewBox="0 0 48 48" fill="currentColor">
+              <path d="M14 6 l4 4 -8 8 -4-4 8-8Z" />
+            </svg>
+            <div class="portfolio-caption"><span class="cat mono">Fourniture matériaux</span><span class="loc">Chantier
+                privé</span></div>
+          </div>
+          <div class="portfolio-card reveal" style="--tile-bg:#3D454C">
+            <svg viewBox="0 0 48 48" fill="currentColor">
+              <rect x="10" y="12" width="28" height="30" />
+            </svg>
+            <div class="portfolio-caption"><span class="cat mono">Bâtiment commercial</span><span class="loc">Lomé,
+                Togo</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="wrap contact-grid">
+        <div>
+          <div class="section-head">
+            <p class="eyebrow">Contact</p>
+            <h2>Discutons de votre chantier</h2>
+            <p>Décrivez votre projet, nous revenons vers vous sous 48 heures ouvrées avec un premier avis technique.</p>
+          </div>
+
+          <form id="contactForm">
+            <div class="field-row">
+              <div class="field">
+                <label for="nom">Nom complet</label>
+                <input type="text" id="nom" name="nom" required>
+              </div>
+              <div class="field">
+                <label for="tel">Téléphone</label>
+                <input type="tel" id="tel" name="tel" required>
+              </div>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="field">
+              <label for="type">Type de projet</label>
+              <select id="type" name="type">
+                <option>Bâtiment</option>
+                <option>Travaux publics</option>
+                <option>Assainissement</option>
+                <option>Espaces verts</option>
+                <option>Matériaux &amp; outillage</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer la demande</button>
+            <p class="form-note">Ce formulaire est une démonstration : branchez-le à votre messagerie ou votre CRM pour
+              recevoir les demandes.</p>
+            <div class="confirm-msg" id="confirmMsg">Merci, votre demande a bien été enregistrée. Notre équipe vous
+              recontacte sous 48h.</div>
+          </form>
+        </div>
+
+        <div>
+          <div class="info-block">
+            <h4>Adresse</h4>
+            <p>Derrière immeuble MAJOREL
+              Tokoin Doumasséssé <br>
+              08 BP 81147<br>Lomé, Togo</p>
+          </div>
+          <div class="info-block">
+            <h4>Téléphone</h4>
+            <p>+228 22 21 76 43 / 90 03 32 92 / 
+99 49 57 90</p>
+          </div>
+          <div class="info-block">
+            <h4>Email</h4>
+            <p>kdjamoura@ymail.com</p>
+          </div>
+          <div class="info-block">
+            <h4>Horaires</h4>
+            <p>Lundi – Vendredi : 7h30 – 17h30<br>Samedi : 8h00 – 12h00</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">EBC BTP</div>
+          <p class="footer-tagline">Bâtiments, travaux publics, assainissement et espaces verts. Vente de matériaux de
+            construction et outillages.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Activités</h5>
+          <ul>
+            <li><a href="#activites">Bâtiments</a></li>
+            <li><a href="#activites">Travaux publics</a></li>
+            <li><a href="#activites">Assainissement</a></li>
+            <li><a href="#activites">Espaces verts</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Entreprise</h5>
+          <ul>
+            <li><a href="#materiaux">Matériaux &amp; outillage</a></li>
+            <li><a href="#realisations">Réalisations</a></li>
+            <li><a href="#contact">Devis</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li>+228 00 00 00 00</li>
+            <li>contact@ebc-btp.com</li>
+            <li>Lomé, Togo</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> EBC BTP. Tous droits réservés.</span>
+        <span>Site vitrine — exemple généré</span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
+
 </html>
